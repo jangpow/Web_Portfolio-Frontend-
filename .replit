@@ -30,3 +30,31 @@ requiredFiles = [".replit", "replit.nix", ".config", "venv"]
 [deployment]
 deploymentTarget = "cloudrun"
 run = ["python3", "main.py"]
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Static site preview"
+
+[[workflows.workflow]]
+name = "Static site preview"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python3 -m http.server 5000 --bind 0.0.0.0"
+waitForPort = 5000
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[[ports]]
+localPort = 5000
+externalPort = 5000

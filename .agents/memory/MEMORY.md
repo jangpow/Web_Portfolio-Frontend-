@@ -1,0 +1,1 @@
+- [Headless scroll-reveal checks](headless-scroll-reveal-checks.md) — `chromium --dump-dom` can miss IntersectionObserver callbacks; verify reveal behavior in a rendered browser viewport.

@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e7">
+  <meta name="description" content="최서진의 프론트엔드 포트폴리오. 웹 성능, 사용자 경험, 인터랙션에 대한 작업 방향을 소개합니다.">
+  <title>최서진 — Frontend Developer Portfolio</title>
+  <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+  <header class="topbar" id="top">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top" aria-label="최서진 포트폴리오, 처음으로">
+        <span class="brand-mark" aria-hidden="true">SJ</span>
+        <span>SEOJIN CHOI<span aria-hidden="true"> / </span>PORTFOLIO</span>
+      </a>
+      <nav aria-label="주요 메뉴">
+        <ul class="nav-links" id="primary-menu">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#approach">Approach</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-tools">
+        <button class="theme-toggle" type="button" id="theme-toggle" aria-label="다크 모드로 전환" title="테마 전환">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+          </svg>
+        </button>
+        <button class="menu-toggle" type="button" id="menu-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="primary-menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="shell hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Frontend developer candidate · portfolio</p>
+          <h1 class="hero-title" id="hero-title"><span>Build</span><span>for the</span><span class="accent">moment.</span></h1>
+          <p class="hero-role">최서진 <span aria-hidden="true">/</span> 웹 플랫폼 프론트엔드 개발자 지원자</p>
+          <p class="hero-intro">빠르게 열리고, 자연스럽게 반응하고, 오래 믿을 수 있는 웹 경험을 만듭니다. 성능과 인터랙션을 제품의 첫인상부터 함께 설계합니다.</p>
+          <div class="hero-actions">
+            <a class="button" href="#projects">프로젝트 살펴보기
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg>
+            </a>
+            <a class="button button-ghost" href="#contact">연락 정보 보기</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit"><span class="orbit-dot"></span></div>
+          <div class="hero-glyph">S</div>
+          <span class="art-label">Frontend / Web platform</span>
+        </div>
+      </div>
+      <div class="hero-bottomline">
+        <div class="shell">
+          <span><i class="ticker-dot"></i>Portfolio concept · details editable</span>
+          <span>Performance / Interaction / Reliability</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="intro-strip" aria-label="핵심 관심 영역">
+      <div class="shell strip-inner">
+        <div class="strip-item"><span class="strip-num">01</span><div><strong>웹 퍼포먼스</strong><span>측정하고, 병목을 줄이고, 다시 확인</span></div></div>
+        <div class="strip-item"><span class="strip-num">02</span><div><strong>유저 인터랙션</strong><span>복잡한 흐름을 이해하기 쉽게</span></div></div>
+        <div class="strip-item"><span class="strip-num">03</span><div><strong>플랫폼 품질</strong><span>접근성부터 운영 안정성까지</span></div></div>
+      </div>
+    </div>
+
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Selected concepts / 01—02</p>
+            <h2 id="projects-title">Work in<br>motion.</h2>
+          </div>
+          <p>아래 두 프로젝트는 기획 브리프에 제시된 포트폴리오용 예시입니다. 실제 수행 내용과 수치는 검증 전이며, 상세를 열어 수정 가능한 시나리오로 확인할 수 있습니다.</p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card reveal">
+            <div class="project-visual" aria-hidden="true">
+              <span class="visual-index">CONCEPT 01 / WEB PLATFORM</span>
+              <span class="visual-word">EVENT<br>HUB</span>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span class="project-type">Performance · Platform</span><span class="sample-tag">예시 프로젝트</span></div>
+              <h3>게임 이벤트 &amp; 보상 수령 허브</h3>
+              <p>이벤트 탐색부터 보상 수령까지의 흐름을 단순화하고, 트래픽이 집중되는 순간에도 안정적으로 작동하도록 설계하는 리팩토링 시나리오.</p>
+              <div class="project-foot">
+                <span class="tech-line">SSR / Web Vitals / Caching</span>
+                <button class="text-action project-open" type="button" data-project="event" aria-haspopup="dialog">사례 상세 보기
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay">
+            <div class="project-visual" aria-hidden="true">
+              <span class="visual-index">CONCEPT 02 / INTERACTIVE UI</span>
+              <span class="visual-word">MY<br>CAFE</span>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span class="project-type">Product UX · Canvas</span><span class="sample-tag">예시 프로젝트</span></div>
+              <h3>My Optimal Cafe UI</h3>
+              <p>메뉴를 직접 조합하고 결과를 즉시 확인하는 커스텀 카페 인터페이스. 탐색, 선택, 미리보기의 리듬을 하나의 캔버스 안에서 연결하는 콘셉트.</p>
+              <div class="project-foot">
+                <span class="tech-line">Drag &amp; Drop / Canvas / State</span>
+                <button class="text-action project-open" type="button" data-project="cafe" aria-haspopup="dialog">사례 상세 보기
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="work-note reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v5m0-8h.01"></path></svg>
+          <span><strong>사실 검증 안내</strong> — 프로젝트명, 구현 내용, 수치는 디자인을 위한 예시이며 검증되지 않았습니다. 실제 이력에 맞게 각 내용을 교체한 뒤 제출해야 합니다.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section approach-section" id="approach" aria-labelledby="approach-title">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">How I think / 02</p>
+            <h2 id="approach-title">Make it<br>matter.</h2>
+          </div>
+          <p>좋은 프론트엔드는 화면을 만드는 데서 끝나지 않습니다. 실제 사용자 흐름과 서비스 조건까지 연결합니다.</p>
+        </div>
+        <div class="approach-grid">
+          <p class="approach-statement reveal">느낌을<br>측정하고,<br><em>근거로</em><br>개선합니다.</p>
+          <div class="principles">
+            <article class="principle reveal"><span class="principle-num">01</span><div><h3>먼저 관찰합니다</h3><p>사용자가 어디서 기다리고, 멈추고, 다시 시도하는지 확인합니다. 문제를 좁힌 뒤 성능 예산과 UX 목표를 정합니다.</p></div></article>
+            <article class="principle reveal"><span class="principle-num">02</span><div><h3>경계에서 설계합니다</h3><p>초기 진입, 느린 네트워크, 빈 상태, 동시 요청처럼 서비스의 경계 조건을 먼저 생각합니다. 화면 상태가 흔들리지 않는 구조를 지향합니다.</p></div></article>
+            <article class="principle reveal"><span class="principle-num">03</span><div><h3>전후를 검증합니다</h3><p>체감만으로 완료를 선언하지 않습니다. 측정 가능한 지표와 접근성 기준으로 변화를 설명하고, 트레이드오프도 함께 기록합니다.</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Tools &amp; techniques / 03</p>
+            <h2 id="skills-title">The stack.</h2>
+          </div>
+          <p>작업에 활용할 기술 키워드를 분야별로 정리했습니다. 실제 숙련도와 사용 경험은 본인의 이력에 맞게 확인 후 수정해 주세요.</p>
+        </div>
+        <div class="skills-tools">
+          <div class="filter-tabs" role="group" aria-label="기술 분야 필터">
+            <button class="filter-tab" type="button" data-filter="all" aria-pressed="true">전체</button>
+            <button class="filter-tab" type="button" data-filter="frontend" aria-pressed="false">프론트엔드</button>
+            <button class="filter-tab" type="button" data-filter="state" aria-pressed="false">상태 관리</button>
+            <button class="filter-tab" type="button" data-filter="performance" aria-pressed="false">성능·도구</button>
+          </div>
+          <p class="skills-disclaimer" id="skills-status" aria-live="polite">기술 키워드 예시 · 숙련도 검증 전</p>
+        </div>
+        <div class="skill-grid" id="skill-grid">
+          <article class="skill-item" data-category="frontend"><span class="skill-category">Frontend</span><strong>TypeScript</strong><small>타입 기반 UI 개발</small></article>
+          <article class="skill-item" data-category="frontend"><span class="skill-category">Frontend</span><strong>React</strong><small>컴포넌트 설계</small></article>
+          <article class="skill-item" data-category="frontend"><span class="skill-category">Frontend</span><strong>Next.js</strong><small>App Router · SSR / SSG</small></article>
+          <article class="skill-item" data-category="frontend"><span class="skill-category">Frontend</span><strong>Tailwind CSS</strong><small>일관된 UI 스타일링</small></article>
+          <article class="skill-item" data-category="state"><span class="skill-category">State</span><strong>Zustand</strong><small>클라이언트 상태 관리</small></article>
+          <article class="skill-item" data-category="state"><span class="skill-category">State</span><strong>React Query</strong><small>서버 상태 · 캐싱</small></article>
+          <article class="skill-item" data-category="performance"><span class="skill-category">Performance</span><strong>Web Vitals</strong><small>Core Web Vitals 분석</small></article>
+          <article class="skill-item" data-category="performance"><span class="skill-category">Tooling</span><strong>Webpack / Vite</strong><small>번들링 · 개발 환경</small></article>
+          <article class="skill-item" data-category="performance"><span class="skill-category">Quality</span><strong>Lighthouse</strong><small>성능 · 접근성 점검</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="shell">
+        <div class="contact-layout">
+          <div class="reveal">
+            <p class="eyebrow">Next / Let's talk</p>
+            <h2 class="contact-title" id="contact-title">Ready<br>to <span>play.</span></h2>
+            <p class="contact-copy">사용자에게 오래 남는 웹 경험을 함께 만들고 싶습니다. 아래 연락 정보를 실제 정보로 교체해 주세요.</p>
+          </div>
+          <div class="contact-details reveal reveal-delay" aria-label="연락 정보 플레이스홀더">
+            <div class="contact-row"><span>Github</span><code class="contact-placeholder">[github-link-here]</code></div>
+            <div class="contact-row"><span>Email</span><code class="contact-placeholder">[email-address]</code></div>
+            <div class="contact-row"><span>Profile</span><code class="contact-placeholder">[프로필 링크 입력]</code></div>
+          </div>
+        </div>
+        <footer class="contact-footer">
+          <span>SEOJIN CHOI · PERSONAL PORTFOLIO</span>
+          <span>Independent candidate portfolio — not affiliated with NEXON.</span>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="project-modal" hidden>
+    <section class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-warning" tabindex="-1">
+      <div class="modal-head">
+        <div><span class="modal-kicker" id="modal-kicker">Project concept</span><h2 id="modal-title"></h2></div>
+        <button class="modal-close" type="button" aria-label="상세 창 닫기">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-warning" id="modal-warning">예시 시나리오입니다. 실제 수행 프로젝트나 성과로 오인되지 않도록 검증 후 수정해 주세요.</p>
+        <div class="star-grid" id="modal-content"></div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
